@@ -1,0 +1,55 @@
+
+@import 'components/mixins.scss';
+@import 'components/colors.scss';
+@import 'components/base.scss';
+
+@import 'components/bar.scss';
+@import 'components/block.scss';
+@import 'components/float.scss';
+@import 'components/form.scss';
+@import 'components/header.scss';
+@import 'components/list.scss';
+@import 'components/text.scss';
+
+
+.container {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+
+#form_ticket .block__content input[type=number] {
+	display: inline-block;
+	text-align: center;
+	width: 10%;
+}
+
+#tickets .ticket {
+
+	display: inline-block;
+	width: 18.5rem;
+
+	&__number {
+		border: 1px solid $grey;
+		display: inline-block;
+		margin: 0.5rem;
+		width: 3rem;
+	}
+
+	&.active {
+		box-shadow: 0 0 25px $blue-light;
+	}
+
+}
+
+#notification ,
+#winner_numbers ,
+#countdown {
+
+	display: none;
+
+	&.active {
+		display: block;
+	}
+
+}

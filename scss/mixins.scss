@@ -1,0 +1,39 @@
+
+@mixin box-sizing( $param: border-box ) {
+
+	-webkit-box-sizing: $param;
+	   -moz-box-sizing: $param;
+	    -ms-box-sizing: $param;
+	        box-sizing: $param;
+
+}
+
+@mixin display-flex() {
+
+	display: -webkit-box;
+	display: -webkit-flex;
+	display:    -moz-box;
+	display:     -ms-flexbox;
+	display:         flex;
+
+}
+
+@mixin flex( $param: 1 ) {
+
+	-webkit-box-flex: $param; /* OLD - iOS 6-, Safari 3.1-6 */
+	   -moz-box-flex: $param; /* OLD - Firefox 19- */
+	    -webkit-flex: $param; /* Chrome */
+	        -ms-flex: $param; /* IE 10 */
+	            flex: $param; /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
+}
+
+@mixin justify-content( $param: flex-start ) {
+
+	-webkit-box-justify-content: $param;
+	   -moz-box-justify-content: $param;
+	    -webkit-justify-content: $param;
+	        -ms-justify-content: $param;
+	            justify-content: $param;
+
+}

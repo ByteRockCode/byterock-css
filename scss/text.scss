@@ -1,0 +1,43 @@
+
+.text {
+
+	&--center  { text-align: center }
+	&--left    { text-align: left }
+	&--right   { text-align: right }
+	&--justify { text-align: justify	}
+
+	&--bold         { font-weight: bold }
+	&--italic       { font-style: italic }
+	&--line-through { text-decoration: line-through  }
+	&--overline     { text-decoration: overline  }
+	&--underline    { text-decoration: underline  }
+
+	&--complete-underline { border-bottom: 0.1em solid }
+
+	&--indent {	text-indent: 2rem }
+
+	&--first-letter-highlight::first-letter {
+		font-size: 1.25em;
+	}
+
+	&--green      { color: $green }
+	&--grey       { color: $grey }
+	&--grey-dark  { color: $grey-dark }
+	&--grey-light { color: $grey-light }
+	&--red        { color: $red }
+	&--white      { color: $white }
+
+	&--size-1  { font-size: 1rem }
+	&--size-2  { font-size: 2rem }
+	&--size-3  { font-size: 3rem }
+	&--size-4  { font-size: 4rem }
+	&--size-5  { font-size: 5rem }
+	&--size-6  { font-size: 6rem }
+	&--size-7  { font-size: 7rem }
+	&--size-8  { font-size: 8rem }
+	&--size-9  { font-size: 9rem }
+	&--size-10 { font-size: 10rem }
+	&--size-11 { font-size: 11rem }
+	&--size-12 { font-size: 12rem }
+
+}
