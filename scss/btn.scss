@@ -1,0 +1,16 @@
+.btn {
+
+	text-transform: uppercase;
+	display: inline-block;
+	margin: 2rem;
+	padding: 1rem 2rem;
+
+	&--border {
+		color: white;
+		background-color: transparent;
+		font-size: 1.25rem;
+		font-weight: bold;
+		border: 0.25rem solid $white;
+	}
+
+}

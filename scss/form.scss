@@ -6,13 +6,14 @@ input[type=password] ,
 input[type=date] ,
 input[type=number] {
 
-	background-color: $grey-light;
-	border: 1px solid $grey;
-	box-shadow: inset 0 0 2px $grey;
+	background-color: transparent;
+	border: none;
+	box-shadow: -1.25rem 1.25rem 0rem -1rem $black , 1.25rem 1.25rem 0rem -1rem $black;
+	color: $black;
 	display: block;
-	font-size: 1.25rem;
+	font-size: 2rem;
 	margin: 0.5rem auto 1rem auto;
-	padding: 0.5rem;
+	padding: 0.5rem 1rem;
 	width: 100%;
 
 	@include box-sizing;
@@ -21,6 +22,7 @@ input[type=number] {
 		outline: 0;
 		outline-offset: 0;
 	}
+
 }
 
 .form {
@@ -34,6 +36,11 @@ input[type=number] {
 			display: inline-block;
 		}
 
+	}
+
+	&--white input {
+		box-shadow: -1.25rem 1.25rem 0rem -1rem white , 1.25rem 1.25rem 0rem -1rem white;
+		color: $black;
 	}
 
 }

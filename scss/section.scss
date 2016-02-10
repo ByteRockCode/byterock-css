@@ -1,0 +1,30 @@
+.section {
+
+	padding: 2rem;
+
+	&__header {
+
+		text-align: center;
+		margin: 2rem 0;
+
+		&__title {
+			display: inline-block;
+			font-size: 3rem;
+			margin: 0.5rem 0;
+		}
+
+		&__subtitle {
+			font-size: 1rem;
+			margin: 0;
+		}
+
+	}
+
+	// &__header,
+	&__content,
+	&__footer {
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+
+}

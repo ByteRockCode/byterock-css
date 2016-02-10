@@ -3,6 +3,7 @@
 
 	background-color: $white;
 	box-shadow: 0 1px 3px $grey-dark;
+	color: $black;
 	margin: 1rem;
 
 	> * {
@@ -62,6 +63,8 @@
 		}
 
 	}
+
+	&--inline { display: inline-block }
 
 	&--blue {
 		background-color: #09F;
