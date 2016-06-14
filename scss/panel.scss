@@ -1,0 +1,33 @@
+.panel {
+
+	margin: 0 2rem;
+	background-color: $white;
+
+	&__header {
+
+		padding: 1rem;
+		border-bottom: 1px solid $grey;
+
+		&__title {
+			font-size: 1.5rem;
+			margin: 0;
+			padding: 0;
+		}
+
+		&--green {
+			background-color: $green;
+			border-bottom: none;
+			color: $white;
+		}
+
+	}
+
+	.table {
+		border-top: none;
+	}
+
+	&__content {
+		border-bottom: 1px solid $grey;
+	}
+
+}

@@ -25,7 +25,39 @@ input[type=number] {
 
 }
 
+label {
+	margin-top: 2rem;
+	display: inline-block;
+}
+
+textarea {
+
+	background-color: transparent;
+	border: none;
+	box-shadow: -1.25rem 1.25rem 0rem -1rem $black , 1.25rem 1.25rem 0rem -1rem $black;
+	color: $black;
+	display: block;
+	font-size: 2rem;
+	margin: 0.5rem auto 1rem auto;
+	max-width: 100%;
+	padding: 0.5rem 1rem;
+	width: 100%;
+
+	@include box-sizing;
+
+	&:focus {
+		outline: 0;
+		outline-offset: 0;
+	}
+
+}
+
 .form {
+
+	margin: 2rem;
+	width: calc( 100% - 4rem );
+
+	@include box-sizing;
 
 	&__error {
 
@@ -38,9 +70,17 @@ input[type=number] {
 
 	}
 
-	&--white input {
-		box-shadow: -1.25rem 1.25rem 0rem -1rem white , 1.25rem 1.25rem 0rem -1rem white;
-		color: $black;
+	&--white {
+
+		label {
+			color: $white;
+		}
+
+		input {
+			box-shadow: -1.25rem 1.25rem 0rem -1rem $white , 1.25rem 1.25rem 0rem -1rem $white;
+			color: $white;
+		}
+
 	}
 
 }

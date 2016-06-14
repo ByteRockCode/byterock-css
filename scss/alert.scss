@@ -1,0 +1,25 @@
+.alert {
+
+	padding: 0.5rem;
+
+	&--blue {
+		background-color: $blue;
+		color: $white;
+	}
+
+	&--green {
+		background-color: $green;
+		color: $white;
+	}
+
+	&--red {
+		background-color: $red;
+		color: $white;
+	}
+
+	&--yellow {
+		background-color: $yellow;
+		color: $white;
+	}
+
+}

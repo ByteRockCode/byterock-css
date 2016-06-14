@@ -14,13 +14,7 @@
 	> * {
 		display: table-cell;
 		vertical-align: middle;
-	}
-
-	&__title {
-
-		font-size: 1.5rem;
-		margin: 0;
-		padding: 0;
+		white-space: nowrap;
 	}
 
 	&__menu {
@@ -43,16 +37,22 @@
 			font-size: 1.75rem;
 		}
 
+		.btn {
+			box-shadow: 0 1px 1px #999;
+		}
+
 	}
 
 	&--big {
 		height: 6rem;
 	}
 
-	&--top {
-		border-top: none;
-		position: fixed;
-		top: 0;
+	&--blue {
+		background-color: $blue;
+	}
+
+	&--border-radius {
+		border-radius: 0.5rem;
 	}
 
 	&--bottom {
@@ -61,18 +61,30 @@
 		position: fixed;
 	}
 
-	&--blue {
-		background-color: $blue;
-	}
-
 	&--green {
 		background-color: $green;
 		border-bottom-color: $white;
 		color: $white;
 	}
 
-	&--border-radius {
-		border-radius: 0.5rem;
+	&__title {
+
+		font-size: 1.5rem;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	&--top {
+		border: none;
+		box-shadow: 0 0 3px $grey-dark;
+		position: fixed;
+		top: 0;
+	}
+
+	&--transparent {
+		background-color: transparent;
+		border-bottom: none;
 	}
 
 }

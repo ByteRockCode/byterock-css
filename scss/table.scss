@@ -1,0 +1,35 @@
+.table {
+
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+
+	th {
+		padding: 1rem 0.5rem;
+	}
+
+	td {
+		padding: 0.5rem;
+	}
+
+	thead {
+
+		tr {
+			border-bottom: 1px solid $grey;
+		}
+
+	}
+
+	tbody {
+
+		tr {
+			border-bottom: 1px solid $grey-light;
+		}
+
+		tr:last-child {
+			border-bottom: none;
+		}
+
+	}
+
+}
